@@ -1,13 +1,16 @@
 name: CI
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-  workflow_dispatch: 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  workflow_dispatch:
 jobs:
-  # This workflow contains a single job called "build"
-  pipline:
+  pipeline:
     runs-on: ubuntu-24.04
     steps:
-      - name: Say hello
-      run: echo "Hello from my first pipline!:
+      - name: Lint (pretend)
+        run: echo "Checking that the code is tidy..."
+      - name: Test (pretend)
+        run: echo "Running the tests..."
+      - name: Build (pretend)
+        run: echo "Building the program..."
+      - name: Package (pretend)
+        run: echo "Putting it in a box..."
